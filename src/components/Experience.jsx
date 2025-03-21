@@ -12,7 +12,37 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+const toRoman = (num) => {
+  const romanNumerals = [
+    ["M", 1000],
+    ["CM", 900],
+    ["D", 500],
+    ["CD", 400],
+    ["C", 100],
+    ["XC", 90],
+    ["L", 50],
+    ["XL", 40],
+    ["X", 10],
+    ["IX", 9],
+    ["V", 5],
+    ["IV", 4],
+    ["I", 1],
+  ];
+  let result = "";
+  for (const [roman, value] of romanNumerals) {
+    while (num >= value) {
+      result += roman;
+      num -= value;
+    }
+  }
+  return result;
+};
+
+const ExperienceCard = ({ experience, index }) => {
+  const isEven = index % 2 === 0;
+  const textColor = isEven ? "#fff" : "#000";
+  const romanIndex = toRoman(index + 1);
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -24,11 +54,9 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
-          />
+          <span style={{ color: textColor, fontSize: '24px', fontWeight: 'bold' }}>
+            {romanIndex}
+          </span>
         </div>
       }
     >
@@ -74,6 +102,7 @@ const Experience = () => {
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
+              index={index}
             />
           ))}
         </VerticalTimeline>
