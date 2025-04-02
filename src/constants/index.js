@@ -116,11 +116,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Flutter Developer & Co-founder",
+    title: "Flutter Developer & CTO",
     company_name: "Numio (Start-up)",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "January 2025 - Present",
+    date: "March 2024 - Present",
     points: [
       "Lead the technical development and growth of Numio, overseeing architecture, platform implementation, and performance optimization.",
       "Build and maintain the core tech stack using Expo (React Native), Express, Firebase, Stripe, TypeScript, and JavaScript for seamless mobile and web experiences.",
@@ -130,20 +130,7 @@ const experiences = [
       ],
   },
   {
-    title: "Full Stack Developer",
-    company_name: "Upwork",
-    icon: upwork,
-    iconBg: "#E6DEDD",
-    date: "March 2024 - Dec 2024",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Software Developer (ASP.NET/React)",
+    title: "Software Developer (ASP.NET/C#)",
     company_name: "Richards Wilcox Canada",
     icon: shopify,
     iconBg: "#383E56",
