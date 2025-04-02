@@ -50,11 +50,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Flutter Developer",
+    title: ".NET/C# Developer",
     icon: creator,
   },
   {
-    title: "Backend Developer",
+    title: "Flutter Developer",
     icon: backend,
   },
 ];
@@ -116,7 +116,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Flutter Developer & CTO",
+    title: "Full Stack Developer & CTO",
     company_name: "Numio (Start-up)",
     icon: starbucks,
     iconBg: "#383E56",
