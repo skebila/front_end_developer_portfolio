@@ -116,7 +116,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full Stack Developer & CTO",
+    title: "Full Stack Developer",
     company_name: "Numio (Start-up)",
     icon: starbucks,
     iconBg: "#383E56",
@@ -134,7 +134,7 @@ const experiences = [
     company_name: "Richards Wilcox Canada",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Feb 2023 - March 2024",
+    date: "Feb 2023 - Jan 2025",
     points: [
       "Developed and maintained APIs to manage data from a large database containing client, order, discount, and payment information, resulting in a 30% increase in departmental productivity.",
       "Designed and implemented a seamless, responsive front-end interface for secure internal use, allowing efficient creation, editing, and management of clients and discounts.",
